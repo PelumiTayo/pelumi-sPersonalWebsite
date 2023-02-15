@@ -1,0 +1,116 @@
+#nigerian-flag {
+  width: 15px;
+}
+
+.aboutMe-container {
+  background: #52ab98;
+  height: 500px;
+  padding: 30px;
+}
+
+.aboutMe-container p {
+  padding-top: 35px;
+  margin: 13px 0px 8px 0px;
+  font-size: 140%;
+  color: #ffffff;
+  height: 250px;
+  overflow-y: hidden;
+}
+
+@media (max-width: 1044px) {
+  .aboutMe-container p {
+    margin-bottom: 0px;
+    padding-top: 0px;
+  }
+}
+
+@media(max-width: 900px) {
+  .aboutMe-container p {
+    overflow-y: scroll
+  }
+}
+
+.about-tabs {
+  height: 35%;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 4px;
+}
+
+.each-tab {
+  flex-direction: column;
+  width: 100%;
+}
+
+.each-tab,
+.hexagon {
+  display: flex;
+  align-items: center;
+}
+
+.hexagon {
+  color: #ffffff;
+  width: 46px;
+  height: 80px;
+  background-color:#2b6777;
+  position: relative;
+  z-index: 0;
+  justify-content: center;
+  box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hexagon:after,
+.hexagon:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #2b6777;
+  position: absolute;
+  left: 0;
+}
+
+.hexagon:before {
+  transform: rotate(60deg);
+}
+
+.hexagon:after {
+  transform: rotate(-60deg);
+}
+
+.hexagon > i{
+  z-index: 1;
+  position: relative;
+  font-size: 33px;
+}
+
+.about-label {
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 7px;
+  font-size: 18px;
+}
+
+.about-label-details {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+@media (max-width: 861px){
+  .about-label-details{
+    display: none;
+  }
+  .each-tab{
+    margin-top: 20px;
+  }
+}
+
+@media(max-width: 430px){
+  .about-label{
+    font-size: 15px;
+  }
+}

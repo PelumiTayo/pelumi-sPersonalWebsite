@@ -1,0 +1,29 @@
+.interview-video-container {
+  background: #2b6777;
+  height: 500px;
+  padding: 30px;
+}
+
+.interview-video-container > div {
+  margin-bottom: 50px;
+}
+
+iframe {
+  width: 60%;
+  max-width: 600px;
+  background-color: black;
+  margin: 0 auto;
+  display: block;
+}
+
+@media(max-width: 720px) {
+  iframe {
+    width:90%;
+  }
+}
+
+@media(max-width: 447px) {
+  iframe {
+    width:100%;
+  }
+}
